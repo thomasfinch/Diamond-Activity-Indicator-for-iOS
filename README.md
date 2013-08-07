@@ -10,8 +10,6 @@ Even though it is not a subclass of UIActivityIndicatorView, the DiamondActivity
 
 Details
 =======
-*Built with ARC
-
-*Requires the QuartzCore framework
-
-*Can be used as a drop-in replacement for any UIActivityIndicatorView
+* Built with ARC
+* Requires the QuartzCore framework
+* Can be used as a drop-in replacement for any UIActivityIndicatorView
