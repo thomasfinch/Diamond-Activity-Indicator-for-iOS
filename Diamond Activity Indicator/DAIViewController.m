@@ -7,6 +7,7 @@
 //
 
 #import "DAIViewController.h"
+#import "DiamondActivityIndicator.h"
 
 @interface DAIViewController ()
 
@@ -14,10 +15,19 @@
 
 @implementation DAIViewController
 
+@synthesize startAnimatingButton;
+@synthesize stopAnimatingButton;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    DiamondActivityIndicator *activityIndicator = [[DiamondActivityIndicator alloc] initWithFrame:CGRectMake(60, 40, 200, 200)];
+    [self.view addSubview:activityIndicator];
+    [activityIndicator startAnimating];
+    
+    [startAnimatingButton addTarget:activityIndicator action:@selector(startAnimating) forControlEvents:UIControlEventTouchUpInside];
+    [stopAnimatingButton addTarget:activityIndicator action:@selector(stopAnimating) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning

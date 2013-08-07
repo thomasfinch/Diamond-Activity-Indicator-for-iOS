@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DAIViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *startAnimatingButton;
+@property (weak, nonatomic) IBOutlet UIButton *stopAnimatingButton;
 
 @end

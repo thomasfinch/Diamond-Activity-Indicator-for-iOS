@@ -19,6 +19,8 @@
 		B9D8584917B1C7F500A8049B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D8584717B1C7F500A8049B /* MainStoryboard_iPhone.storyboard */; };
 		B9D8584C17B1C7F500A8049B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D8584A17B1C7F500A8049B /* MainStoryboard_iPad.storyboard */; };
 		B9D8584F17B1C7F500A8049B /* DAIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D8584E17B1C7F500A8049B /* DAIViewController.m */; };
+		B9D8585717B1C82700A8049B /* DiamondActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D8585617B1C82700A8049B /* DiamondActivityIndicator.m */; };
+		B9D8585917B1CCEA00A8049B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9D8585817B1CCEA00A8049B /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		B9D8584B17B1C7F500A8049B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		B9D8584D17B1C7F500A8049B /* DAIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAIViewController.h; sourceTree = "<group>"; };
 		B9D8584E17B1C7F500A8049B /* DAIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAIViewController.m; sourceTree = "<group>"; };
+		B9D8585517B1C82700A8049B /* DiamondActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiamondActivityIndicator.h; path = ../DiamondActivityIndicator.h; sourceTree = "<group>"; };
+		B9D8585617B1C82700A8049B /* DiamondActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiamondActivityIndicator.m; path = ../DiamondActivityIndicator.m; sourceTree = "<group>"; };
+		B9D8585817B1CCEA00A8049B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9D8585917B1CCEA00A8049B /* QuartzCore.framework in Frameworks */,
 				B9D8583017B1C7F500A8049B /* UIKit.framework in Frameworks */,
 				B9D8583217B1C7F500A8049B /* Foundation.framework in Frameworks */,
 				B9D8583417B1C7F500A8049B /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +81,7 @@
 		B9D8582E17B1C7F500A8049B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B9D8585817B1CCEA00A8049B /* QuartzCore.framework */,
 				B9D8582F17B1C7F500A8049B /* UIKit.framework */,
 				B9D8583117B1C7F500A8049B /* Foundation.framework */,
 				B9D8583317B1C7F500A8049B /* CoreGraphics.framework */,
@@ -85,6 +92,7 @@
 		B9D8583517B1C7F500A8049B /* Diamond Activity Indicator */ = {
 			isa = PBXGroup;
 			children = (
+				B9D8585A17B1DD6400A8049B /* DiamondActivityIndicator */,
 				B9D8583E17B1C7F500A8049B /* DAIAppDelegate.h */,
 				B9D8583F17B1C7F500A8049B /* DAIAppDelegate.m */,
 				B9D8584717B1C7F500A8049B /* MainStoryboard_iPhone.storyboard */,
@@ -108,6 +116,15 @@
 				B9D8584517B1C7F500A8049B /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9D8585A17B1DD6400A8049B /* DiamondActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				B9D8585517B1C82700A8049B /* DiamondActivityIndicator.h */,
+				B9D8585617B1C82700A8049B /* DiamondActivityIndicator.m */,
+			);
+			name = DiamondActivityIndicator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +198,7 @@
 				B9D8583C17B1C7F500A8049B /* main.m in Sources */,
 				B9D8584017B1C7F500A8049B /* DAIAppDelegate.m in Sources */,
 				B9D8584F17B1C7F500A8049B /* DAIViewController.m in Sources */,
+				B9D8585717B1C82700A8049B /* DiamondActivityIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +297,7 @@
 				GCC_PREFIX_HEADER = "Diamond Activity Indicator/Diamond Activity Indicator-Prefix.pch";
 				INFOPLIST_FILE = "Diamond Activity Indicator/Diamond Activity Indicator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -290,6 +309,7 @@
 				GCC_PREFIX_HEADER = "Diamond Activity Indicator/Diamond Activity Indicator-Prefix.pch";
 				INFOPLIST_FILE = "Diamond Activity Indicator/Diamond Activity Indicator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
