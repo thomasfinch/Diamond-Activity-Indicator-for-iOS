@@ -134,5 +134,11 @@
     return isAnimating;
 }
 
+-(void)setColor:(UIColor *)color
+{
+    [firstDot setBackgroundColor:[color CGColor]];
+    [secondDot setBackgroundColor:[color CGColor]];
+    [thirdDot setBackgroundColor:[color CGColor]];
+}
 
 @end
