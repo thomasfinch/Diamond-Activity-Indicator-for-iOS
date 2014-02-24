@@ -21,7 +21,7 @@
         isAnimating = NO;
         self.hidesWhenStopped = YES;
         self.color = [UIColor grayColor];
-        CGColorRef pointColor = [UIColor grey.CGColor;
+        CGColorRef pointColor = [UIColor grayColor].CGColor;
         dotRadius = frame.size.height <= frame.size.width ? frame.size.width/12 : frame.size.height/12;
         firstPoint = CGRectMake(frame.size.width/4-dotRadius, frame.size.height/2-dotRadius, 2*dotRadius, 2*dotRadius);
         secondPoint = CGRectMake(frame.size.width/2-dotRadius, frame.size.height/4-dotRadius, 2*dotRadius, 2*dotRadius);
